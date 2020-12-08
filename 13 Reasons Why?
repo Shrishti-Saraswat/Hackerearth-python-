@@ -1,0 +1,5 @@
+li=list(map(int,input().split()))
+li[0],li[1]=li[1],li[0]
+li[0]=li[0]*li[2]
+li[1]=li[1]+li[2]
+print(li[0],li[1])
