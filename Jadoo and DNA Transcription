@@ -1,0 +1,16 @@
+s=input()
+ans=''
+for i in s:
+    if i=='G':
+        ans+='C'
+    elif i=='C':
+        ans+='G'
+    elif i=='T':
+        ans+='A'
+    elif i=='A':
+        ans+='U'
+    else:
+        print('Invalid Input')
+        break
+if len(ans)==len(s):
+    print(ans)
