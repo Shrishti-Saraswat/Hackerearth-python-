@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int,input().split(' ')))
+max=arr[-1]
+output=[arr[-1]]
+for i in range(n-2,0,-1):
+        if arr[i]>=max: 
+                output.append(arr[i])
+                max=arr[i]
+output=output[::-1]
+for i in output:
+        print(i, end=" ")
